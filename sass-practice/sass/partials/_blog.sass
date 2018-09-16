@@ -1,0 +1,117 @@
+.blog
+	background: $bg-grey-blog url(../images/border-blog.png) repeat-x top
+	padding: 61px 0 63px
+	+ipad
+		padding: 35px 0 25px
+
+.blog h2
+	font-size: 40px
+	color: $color-red-head
+	font-weight: 600
+	text-align: center
+	margin: 0
+	padding: 0
+	+phone
+		font-size: 25px
+
+.after-head
+	text-align: center
+	padding: 0
+	margin: 0
+	margin-bottom: 59px
+	+ipad
+		margin-bottom: 20px
+
+.blog h4
+	font-size: 16px
+	font-weight: 800
+	color: $color-grey-second
+	margin: 0
+	padding: 0
+	margin-bottom: 35px
+	+ipad
+		margin-bottom: 15px
+
+.blog-text
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+.why-us
+	width: 20%
+	+tablet
+		width: 30%
+		margin-bottom: 15px
+	+ipad
+		width: 100%
+		text-align: center
+
+.about-proj
+	width: 46%
+	h4
+		margin-bottom: 30px
+	+tablet
+		width: 70%
+	+ipad
+		width: 100%
+		text-align: center
+
+.client-say
+	width: 23%
+	h4
+		margin-bottom: 23px
+	+tablet
+		width: 100%
+	+ipad
+		width: 100%
+		h4
+			text-align: center
+
+.why-us ul
+	list-style: none
+	margin: 0
+	padding: 0
+
+.why-us li
+	margin: 0
+	padding: 0
+	margin-bottom: 10px
+
+.why-us li i
+	font-size: 12px
+	color: $color-check-mark
+	margin-right: 2px
+
+.about-proj p
+	line-height: 24.7px
+
+.about-proj p a
+	color: $color-red-head
+
+.client-say p
+	background: $color-bg-white
+	padding: 10px 10px 14px 15px
+	margin: 0
+	margin-bottom: 7px
+	border-radius: 5px
+	position: relative
+	font-style: italic
+	line-height: 24.7px
+	&::after
+		content: ""
+		display: inline-block
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 0 24px 24px 0
+		border-color: transparent $color-bg-white transparent transparent
+		position: absolute
+		bottom: -24px
+		left: 18px
+
+.client-say span
+	font-weight: 600
+	font-style: italic
+	color: $color-light-blue
+	margin-left: 58px
+	font-size: 16px

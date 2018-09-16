@@ -1,0 +1,59 @@
+header
+	background: $bg-blue url(../images/border-header.png) repeat-x bottom
+	padding: 18px 0 23px
+	.container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		+ipad
+			flex-direction: column
+			justify-content: center
+
+.logo
+	font-size: 25px
+	color: $color-white
+	text-decoration: none
+	padding-left: 5px
+	b
+		font-size: 30px
+		text-transform: uppercase
+		font-weight: 800
+		margin-right: 2px
+
+.main-nav
+	margin-right: 59px
+	+ipad
+		margin-right: 0
+		width: 100%
+		text-align: center
+
+.main-nav ul
+	list-style: none
+	margin: 0
+	padding: 0
+	padding-top: 4px
+
+.main-nav li
+	margin: 0
+	padding: 0
+	display: inline-block
+	padding: 6px 15px 5px 15px
+	margin-left: 20px
+	a
+		text-decoration: none
+		color: $color-white
+		text-transform: uppercase
+		font-weight: 600
+	+tablet
+		margin-left: 0
+	+ipad
+		display: block
+		padding: 5px 0
+		width: 100%
+
+.main-nav li:hover
+		background: $color-darkblue
+		border-radius: 3px
+		box-shadow: 0px 3px 0px 0px rgba(82,139,134,1)
+		font-size: 14px
