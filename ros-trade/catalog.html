@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="js/jRange/jquery.range.css">
+</head>
+<body>
+
+	<header>
+		<nav class="main-nav">
+			<div class="container">
+				<ul>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="header-part">
+			<div class="container">
+				<div class="logo-part">
+					<a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+					<a href="catalog.html" class="catalog">каталог товаров</a>
+				</div>
+				<div class="contacts-part">
+					<div class="top-part">
+						<div class="delivery">
+							<p class="hours"><b>Заказ через сайт:</b> 24/7</p>
+							<p><b>Доставка по Бишкеку:</b> Пн.-Пт., 9:00-18:00</p>
+							<p><b>Доставка по области:</b> По договорённости</p>
+						</div>
+						<div class="request-a-call">
+							<form>
+								<input id="phone" type="text" placeholder="+996(___) __-__-__">
+								<button>Заказать звонок</button>
+							</form>
+						</div>
+						<div class="tel-numbs">
+							<div class="codes">
+								<span>+996 559</span>
+								<span>+996 779</span>
+								<span>+996 507</span>
+							</div>
+							<div class="number-and-text">
+								<p class="number">33-93-90</p>
+								<p class="numb-text">ждем Ваших звонков<br>Пн.-Пт. с 9:00 до 19:00</p>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-part">
+						<div class="search">
+							<form>
+								<input type="text" placeholder="Быстрый поиск...">
+							</form>
+						</div>
+						<div class="main-basket">
+							<span>Товаров 0</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="add-nav">
+		<div class="container">
+			<ul>
+				<li><a href="index.html">Главная</a><i> / </i></li>
+				<li><a href="#">Тепловое оборудование</a><i> / </i></li>
+				<li><a href="#">Плиты</a><i> / </i></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="main-information">
+		<div class="container">
+			<div class="left-side">
+				<div class="interesting">
+					<h3>Вас могут заинтересовать</h3>
+					<a href="#">Газовые плиты</a>
+					<a href="#">Электро-плиты</a>
+					<a href="#">Индукционные плиты</a>
+				</div>
+				<div class="side-filter-item">
+					<h3>Цена</h3>
+					<div class="filter">
+						<div class="range_container mb15">
+							<input class="range-slider" value="109,1260335" type="hidden" autocomplete="off">
+						</div>
+						<span class="filter-label">Цена: <i id="prs">0</i> - <i id="pre">38.500 сом</i></span>
+					</div>
+					<button>Применить цены</button>
+				</div>
+				<div class="filters">
+					<h3>Брэнд</h3>
+					<div class="form-block">
+						<form>
+							<div class="label-input">
+								<input type="checkbox" id="grill">
+								<label for="grill">Гриль-мастер</label>
+							</div>
+							<div class="label-input">
+								<input type="checkbox" id="volcano">
+								<label for="volcano">Вулкан</label>
+							</div>
+							<div class="label-input">
+								<input type="checkbox" id="abat">
+								<label for="abat">Абат</label>
+							</div>
+							<div class="label-input">
+								<input type="checkbox" id="food">
+								<label for="food">Пищевые технологии</label>
+							</div>
+							<div class="label-input label-input-last">
+								<input type="checkbox" id="atecy">
+								<label for="atecy">Атеси</label>
+							</div>
+							<button>Сбросить фильтры</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="right-side">
+				<h2>Плиты</h2>
+				<div class="items">
+					<div class="item">
+						<a href="#">
+							<img src="images/equipment-4.jpg" alt="equipment">
+							<h4>Аппарат для шаурмы</h4>
+						</a>
+						<span>Pimak M072-1</span>
+						<a href="#" class="basket">В корзину</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="images/equipment-5.jpg" alt="equipment">
+							<h4>Аппарат для шаурмы</h4>
+						</a>
+						<span>Pimak M072-1</span>
+						<a href="#" class="basket">В корзину</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="images/equipment-6.jpg" alt="equipment">
+							<h4>Аппарат для шаурмы</h4>
+						</a>
+						<span>Pimak M072-1</span>
+						<a href="#" class="basket">В корзину</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="images/equipment-7.jpg" alt="equipment">
+							<h4>Аппарат для шаурмы</h4>
+						</a>
+						<span>Pimak M072-1</span>
+						<a href="#" class="basket">В корзину</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="images/equipment-8.jpg" alt="equipment">
+							<h4>Аппарат для шаурмы</h4>
+						</a>
+						<span>Pimak M072-1</span>
+						<a href="#" class="basket">В корзину</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="images/equipment-9.jpg" alt="equipment">
+							<h4>Аппарат для шаурмы</h4>
+						</a>
+						<span>Pimak M072-1</span>
+						<a href="#" class="basket">В корзину</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="images/equipment-9.jpg" alt="equipment">
+							<h4>Аппарат для шаурмы</h4>
+						</a>
+						<span>Pimak M072-1</span>
+						<a href="#" class="basket">В корзину</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="images/equipment-9.jpg" alt="equipment">
+							<h4>Аппарат для шаурмы</h4>
+						</a>
+						<span>Pimak M072-1</span>
+						<a href="#" class="basket">В корзину</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="images/equipment-4.jpg" alt="equipment">
+							<h4>Аппарат для шаурмы</h4>
+						</a>
+						<span>Pimak M072-1</span>
+						<a href="#" class="basket">В корзину</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="images/equipment-5.jpg" alt="equipment">
+							<h4>Аппарат для шаурмы</h4>
+						</a>
+						<span>Pimak M072-1</span>
+						<a href="#" class="basket">В корзину</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="images/equipment-6.jpg" alt="equipment">
+							<h4>Аппарат для шаурмы</h4>
+						</a>
+						<span>Pimak M072-1</span>
+						<a href="#" class="basket">В корзину</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="images/equipment-7.jpg" alt="equipment">
+							<h4>Аппарат для шаурмы</h4>
+						</a>
+						<span>Pimak M072-1</span>
+						<a href="#" class="basket">В корзину</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="images/equipment-8.jpg" alt="equipment">
+							<h4>Аппарат для шаурмы</h4>
+						</a>
+						<span>Pimak M072-1</span>
+						<a href="#" class="basket">В корзину</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="images/equipment-9.jpg" alt="equipment">
+							<h4>Аппарат для шаурмы</h4>
+						</a>
+						<span>Pimak M072-1</span>
+						<a href="#" class="basket">В корзину</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="images/equipment-9.jpg" alt="equipment">
+							<h4>Аппарат для шаурмы</h4>
+						</a>
+						<span>Pimak M072-1</span>
+						<a href="#" class="basket">В корзину</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="images/equipment-9.jpg" alt="equipment">
+							<h4>Аппарат для шаурмы</h4>
+						</a>
+						<span>Pimak M072-1</span>
+						<a href="#" class="basket">В корзину</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container clearfix">
+			<p>© 2017-2018 RosTradeImpex www.rostrade.kg. <br>При копировании материалов ссылка на сайт обязательна. </p>
+			<p>Разработка сайта <br><a href="#">“Web-Alliance”</a></p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#phone").mask("+996(999)99-99-99");
+		});
+	</script>
+	<script type="text/javascript" src="js/jRange/jquery.range-min.js"></script>
+	<script>
+		Number.prototype.formatMoney = function(n, x) {
+			var re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\.' : '$') + ')';
+			return this.toFixed(Math.max(0, ~~n)).replace(new RegExp(re, 'g'), '$&.');
+		};
+		function getURL() {
+			var query = String(document.location).split('?');
+			return query[0].replace(/\/$/, '') + '/';
+		}
+
+		function getURLVar(key) {
+			var value = [];
+			var query = String(document.location).split('?');
+
+			if (query[1]) {
+				var part = query[1].split('&');
+
+				for (i = 0; i < part.length; i++) {
+					var data = part[i].split('=');
+
+					if (data[0] && data[1]) {
+						value[data[0]] = data[1];
+					}
+				}
+
+				if (value[key]) {
+					return value[key];
+				} else {
+					return value;
+				}
+			}
+		}
+
+		$(document).ready(function(){
+					$('.range-slider').jRange({
+				from: 109,
+				to: 1260335,
+				step: 1,
+				width:'100%',
+				theme: "theme-decor",
+				format:function(value, type){
+					if(isNaN(value)){
+						value = parseInt($('.range-slider').val().split(',')[(type == 'low' ? 0 : 1)]);
+					}
+					return value.formatMoney()+' сом';
+				},
+				showScale:false,
+				showLabels: false,
+				isRange : true,
+				onstatechange:function(val){
+					val = val.split(',');
+
+					val[0] = parseInt(val[0], 10) || 0;
+					val[1] = parseInt(val[1], 10) || 0;
+					if(val[0] > val[1]){
+						val[0] = val[1];
+					}
+					$('#prs').text(val[0].formatMoney()+' сом');
+					$('#pre').text(val[1].formatMoney()+' сом');
+				},
+				ondragend: function(val){
+					var url = getURL()+'?';
+					var vars = getURLVar();
+					val = val.split(',');
+					val[0] = parseInt(val[0], 10) || 0;
+					val[1] = parseInt(val[1], 10) || 0;
+					if(val[0] > val[1]){
+						val[0] = val[1];
+					}
+
+					if(vars && Object.keys(vars).length > 0){
+						var tv = [];
+						for(var k in vars){
+							if(!k.match(/^price/) && !k.match(/^page/)){
+								tv.push(k+'='+vars[k])
+							}
+						}
+						if(tv.length > 0) {
+							url += tv.join('&');
+							url+='&';
+						}
+					}
+					url+='price[min]='+val[0]+'&price[max]='+val[1]
+					//window.location.href = url;
+				}
+			});
+		});
+	</script>
+
+</body>
+</html>
